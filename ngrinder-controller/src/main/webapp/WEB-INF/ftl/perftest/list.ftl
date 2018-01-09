@@ -70,7 +70,7 @@
 		<div class="pull-right" style="margin-top:-20px"><code id="current_running_status" style="width:300px"></code></div>
 	<form id="test_list_form" name="test_list_form"
 	      class="well form-inline search-bar" style="margin-top:0;margin-bottom:0;height:30px;"
-		  action="${req.getContextPath()}/perftest/list" method="POST">
+		  action="${req.getContextPath()}/perftest/list" method="GET">
 		<div class="left-float" data-step="3" data-intro="<@spring.message 'intro.list.search'/>">
 			<select id="tag" name="tag" style="width:150px">
 				<option value=""></option>
@@ -259,7 +259,7 @@
 	</@list>
 	</tbody>
 </table>
-<div class="pull-right" rel="popover" style="float;margin-top:-26px;margin-right:-30px"
+<div class="pull-right" rel="popover" style="float;margin-top:-26px;margin-right:-30px;cursor: pointer"
 	title="Tip" data-html="ture" data-placement="left"
 	data-content="<@spring.message "intro.public.button.show"/>"
 	id="introButton"	>
